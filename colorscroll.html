@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Color Scroll</title>
+		<style type="text/css">
+			body {
+				min-height: 4000px;
+				padding-top: 1000px;
+				position: relative;
+			}
+
+			#text {
+				font-size: 24px;
+				font-family: sans-serif;
+				font-weight: bold;
+				margin-left: 30%;
+			}
+
+			#color-bg {
+				background-color: rgb(242,233,227);
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+	</head>
+
+<body>
+	<div id="color-bg"></div>
+
+	<div id="text">
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+		<p>L'amour est un oiseau rebelle<br>
+		Que nul ne peut apprivoiser<br>
+		Et c'est bien en vain qu'on l'appelle<br>
+		S'il lui convient de refuser</p>
+		<p>L'amour est enfant de Bohème<br>
+		Qui n'a jamais jamais connu de loi<br>
+		Si tu ne m'aimes pas, je t'aime<br>
+		Si je t'aime, prends garde à toi !</p>
+
+
+	</div>
+
+
+	<script src="colorscroll.js"></script>
+	<script>
+    var bgColors = new colorScroll.Plot('#color-bg', 'backgroundColor', [
+	    { position: 1000, color: new $.Color('rgb(242,233,227)') },
+	    { position: 1500, color: 'rgb(11,99,39)' },
+	    { position: 2000, color: '#23252F' },
+	    { position: 2500, color: 'red' },
+	    { position: 3000, color: 'rgb(255,150,150)' }
+		], 'body');
+
+    var textColors = new colorScroll.Plot('#text', 'color', [
+	    { position: 0, color: '#000000' },
+	    { position: .5, color: '#FFFFFF'},
+	    { position: 1, color: '#FF7000'}
+		]);
+
+		$(function() {
+
+	    $(document).scroll(function() {
+	        bgColors.change();
+	        textColors.change();
+	    }); 
+		});
+	</script>
+
+</body>
+
+
+</html>
